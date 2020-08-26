@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Genetic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Alfa+Slab+One"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body style="color: rgb(255, 255, 255);">
+    <div style="padding: 100px;">
+      <div class="container">
+        <div class="row" style="text-align: center;">
+          <div class="col-md-12" style="text-align: center;">
+            <p
+              id="result"
+              style="
+                font-family: 'Allerta Stencil', sans-serif;
+                font-size: 31px;
+              "
+            >
+            Genetic Algorithm
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-6 my-auto"
+            style="
+              align-content: center;
+              border-style: none;
+              border-right-style: none;
+              border-right-color: rgb(82, 82, 82);
+            "
+          >
+            <div style="text-align: center;">
+              <input
+                type="text"
+                id="realWord"
+                style="
+                  width: 364px;
+                  height: 55px;
+                  text-align: center;
+                  font-family: 'Abril Fatface', cursive;
+                  font-size: 31px;
+                  max-width: 250px;
+                  color: rgb(255, 255, 255);
+                  background-color: rgba(255, 255, 255, 0);
+                  border-style: none;
+                  margin: 2px;
+                  margin-top: 2px;
+                "
+                value="Change me :D"
+              /><button
+                id="start"
+                class="btn btn-primary"
+                type="button"
+                style="
+                  width: 89px;
+                  height: 49px;
+                  margin: 0px;
+                  font-family: 'Abril Fatface', cursive;
+                  font-size: 24px;
+                  margin-top: -11px;
+                  margin-left: 0px;
+                  text-align: center;
+                  background-color: rgb(54, 79, 107);
+                  border-style: none;
+                "
+              >
+                Start
+              </button>
+            </div>
+            <div style="text-align: center;">
+              <div>
+                <br />
+                <h6 id="popnum">population size: 1000</h6>
+                <input type="range" id="popsize" min=13 max=1000 value="1000" step="1">
+                <h6 id="ratenum">mutation rate: 2%</h6>
+                <input type="range" id="mutationRate"  min=0 max=100 value="2" step="1">
+                <h6 id="delaynum">simulation delay: 10ms</h6>
+                <input type="range" id="delay"  min=1 max=1000 value="10" step="1">
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6"
+            style="
+              border-style: none;
+              border-right-style: none;
+              border-left-style: solid;
+              border-left-color: rgb(67, 67, 67);
+            "
+          >
+            <textarea
+              id="show"
+              style="
+                color: rgb(255, 255, 255);
+                text-align: left;
+                width: 100%;
+                height: 314px;
+                overflow: hidden;
+                resize: none;
+              "
+              disabled="true"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./Adn.js"></script>
+    <script src="./Word.js"></script>
+    <script src="./Population.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
