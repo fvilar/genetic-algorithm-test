@@ -1,3 +1,3 @@
 # genetic-algorithm-test
 
-![alt text](https://i.imgur.com/fxz9mlP.gifv)
+![alt text](https://i.imgur.com/fxz9mlP.gif)
